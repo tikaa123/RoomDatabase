@@ -97,4 +97,23 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/colorPrimary"/>
+
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:id="@+id/btnEdit"
+        android:layout_alignTop="@+id/btnSimpan"
+        android:layout_toRightOf="@+id/btnSimpan"
+        android:layout_toEndOf="@+id/btnSimpan" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Hapus"
+        android:id="@+id/btnHapus"
+        android:layout_alignTop="@+id/btnEdit"
+        android:layout_toRightOf="@+id/btnEdit"
+        android:layout_toEndOf="@+id/btnEdit" />
 </LinearLayout>

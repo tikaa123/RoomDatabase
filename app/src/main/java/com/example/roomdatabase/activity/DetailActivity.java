@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -22,11 +23,44 @@ import java.util.List;
 import static com.example.roomdatabase.AppApplication.db;
 
 public class DetailActivity extends AppCompatActivity {
+    
+    Button btnEdit;
+    Button btnHapus;
+
 
     RecyclerView myRecyclerview;
     FloatingActionButton myFab;
     RecycleAdapter recycleAdapter;
     List<Mahasiswa> listMahasiswas = new ArrayList<>();
+
+
+
+    });
+
+        btnEdit.setOnClickListener(new View.OnClickListener() {
+
+        @Override
+
+        public void onClick(View v) {
+
+            edit();
+
+        }
+
+    });
+
+        btnHapus.setOnClickListener(new View.OnClickListener() {
+
+        @Override
+
+        public void onClick(View v) {
+
+            hapus();
+
+        }
+
+    });
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
